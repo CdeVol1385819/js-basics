@@ -1,0 +1,76 @@
+ #main-header {
+     display: flex;
+     position: fixed;
+     width: 95%;
+     height: 75px;
+     border: solid;
+     align-items: center;
+     overflow: hidden;
+     padding: 20px;
+     background-image: linear-gradient(to right, blue, cyan, green);
+ }
+ #navbar{
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ h1 {
+     color: rgb(110 153 135);
+     font-size: 50px;
+     text-decoration: underline;
+     font-family: fantasy;
+     text-shadow: 5px 5px black;
+     font-stretch: extra-expanded;
+     margin-left: 50px;
+ }
+ ul {
+     list-style-type: none;
+     margin-left: 500px;
+     padding: 0;
+     width: 60px;
+     display: flex;
+ }
+ a {
+     text-decoration: none;
+     color: black;
+     font-family: fantasy;
+ }
+ li {
+     display: block;
+     border: solid;
+     justify-content: space-between;
+     margin: 15px;
+     padding: 10px;
+     background-color: rgb(110, 153, 135);
+     border-radius: 25%;
+     transition: background-color 2s;
+     box-shadow: 10px 10px;
+ }
+ li:hover {
+     background-color: rgb(46, 11, 245);
+ }
+ #header-img {
+     border-radius: 50%;
+     border: solid 2px;
+     margin-right: 50px;
+ }
+ .card-container {
+     background-color: transparent;
+     width: 150px;
+     height: 125px;
+     perspective: 500px;
+ }
+ #front {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transition: transform 2s;
+     transform-style: preserve-3d;
+     margin-right: 50px;
+ }
+ .card-container:hover #front {
+    transform: rotateY(180deg);
+ }
+ body {
+     background-color: darkgrey;
+ }
